@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>Галерея</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">ДШИ №4</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="parents.html">Для родителей</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="announcements.html">Объявления</a></li>
+                </ul>
+                <div class="info_line">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+<main class="gallery-page">
+    <div class="container">
+        <h1 class="page-title">Галерея работ</h1>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Поиск по галерее...">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+        
+        <div class="categories">
+            <button class="category-btn active" data-category="all">Все работы</button>
+            <button class="category-btn" data-category="painting">Живопись</button>
+            <button class="category-btn" data-category="sculpture">Скульптура</button>
+            <button class="category-btn" data-category="graphics">Графика</button>
+            <button class="category-btn" data-category="crafts">Декоративно-прикладное</button>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="painting">
+            <img src="img/pe.png" alt="Детская живопись" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Летний пейзаж"</h3>
+                    <p class="gallery-date">Иванова Мария, 10 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="sculpture">
+            <img src="https://example.com/gallery2.jpg" alt="Детская скульптура" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Семья сов"</h3>
+                    <p class="gallery-date">Петров Алексей, 12 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="graphics">
+            <img src="https://example.com/gallery3.jpg" alt="Графика" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Городские силуэты"</h3>
+                    <p class="gallery-date">Сидорова Анна, 14 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="crafts">
+                <img src="https://example.com/gallery4.jpg" alt="Декоративное искусство" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Витражная композиция"</h3>
+                    <p class="gallery-date">Кузнецов Дмитрий, 11 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="painting">
+                <img src="https://example.com/gallery5.jpg" alt="Акварель" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Морской закат"</h3>
+                    <p class="gallery-date">Смирнова Елизавета, 9 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="sculpture">
+                <img src="https://example.com/gallery6.jpg" alt="Глиняная скульптура" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Лесной дух"</h3>
+                    <p class="gallery-date">Фёдоров Артём, 13 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="graphics">
+                <img src="https://example.com/gallery7.jpg" alt="Черно-белая графика" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Геометрические формы"</h3>
+                    <p class="gallery-date">Николаева София, 10 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="crafts">
+                <img src="https://example.com/gallery8.jpg" alt="Текстильная работа" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Лоскутное одеяло"</h3>
+                    <p class="gallery-date">Волкова Арина, 12 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="painting">
+                <img src="https://example.com/gallery9.jpg" alt="Масляная живопись" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Натюрморт с фруктами"</h3>
+                    <p class="gallery-date">Белов Максим, 15 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="sculpture">
+                <img src="https://example.com/gallery10.jpg" alt="Пластилиновая скульптура" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Динозавры"</h3>
+                    <p class="gallery-date">Козлова Виктория, 8 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="graphics">
+                <img src="https://example.com/gallery11.jpg" alt="Линогравюра" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Портрет друга"</h3>
+                    <p class="gallery-date">Григорьев Иван, 11 лет</p>
+                </div>
+            </div>
+                
+            <div class="gallery-item" data-category="crafts">
+                <img src="https://example.com/gallery12.jpg" alt="Керамика" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3 class="gallery-title">"Чайный сервиз"</h3>
+                    <p class="gallery-date">Павлова Алиса, 14 лет</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Детская школа искусств. Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const info_line = document.querySelector('.info_line');
+            const navLinks = document.querySelector('.nav-links');
+            const navLinksItems = document.querySelectorAll('.nav-links li');
+            
+            info_line.addEventListener('click', function() {
+                navLinks.classList.toggle('nav-active');
+                
+                info_line.classList.toggle('toggle');
+                
+                document.body.style.overflow = navLinks.classList.contains('nav-active') ? 'hidden' : 'auto';
+            });
+            
+            navLinksItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navLinks.classList.remove('nav-active');
+                    info_line.classList.remove('toggle');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+            
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    
+                    categoryBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    
+                    galleryItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            const searchInput = document.querySelector('.search-input');
+            const searchBtn = document.querySelector('.search-btn');
+            
+            function performSearch() {
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                galleryItems.forEach(item => {
+                    const title = item.querySelector('.gallery-title').textContent.toLowerCase();
+                    const author = item.querySelector('.gallery-date').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || author.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+            
+            searchBtn.addEventListener('click', performSearch);
+            searchInput.addEventListener('keyup', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

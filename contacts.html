@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/contacts.css">
+    <title>Контакты</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">ДШИ №4</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="parents.html">Для родителей</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                    <li><a href="announcements.html">Объявления</a></li>
+                </ul>
+                <div class="info_line">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+<main class="contacts-page">
+    <div class="container">
+        <h1 class="page-title">Контакты</h1>
+        
+        <div class="contacts-container">
+            
+            <div class="contact-info">
+                <h2>Контактная информация</h2>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <h3>Адрес</h3>
+                        <p>Астраханская область, г. Харабали, ул. Б. Хмельницкого, дом № 5</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-text">
+                        <h3>Телефоны</h3>
+                        <p>тел./факс: 8(85148) 5-24-09 - директор, секретарь, зам.директора по учебной работе.<br>8 (85148) 5-11-40 - гл.бухгалтер Козлова Марина Геннадьевна.<br>тел. 8(85148) 5-55-24 - заместитель директора по филиалу "ДШИ № 12" с. Тамбовка - Пересекин Дмитрий Константинович. </p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-text">
+                        <h3>Электронная почта</h3>
+                        <a href="mailtoharabali2016@yandex.ru"><p>harabali2016@yandex.ru</p></a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div class="contact-text">
+                        <h3>Социальные сети</h3>
+                        <p>VK: vk.com/dshi_art</p>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="map-container">
+                <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p&amp;source=constructor" frameborder="0"></iframe>
+            </div>
+        </div>
+        
+        <div class="hours-container">
+            <h2>Режим работы</h2>
+            <table class="hours-table">
+                <tr>
+                    <th>Понедельник - Пятница</th>
+                    <td>08:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <th>Суббота</th>
+                    <td>08:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <th>Воскресенье</th>
+                    <td>Выходной</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="feedback-form">
+            <h2>Обратная связь</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон (необязательно)</label>
+                    <input type="tel" id="phone" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </div>
+    </div>
+</main>
+    
+<footer>
+    <div class="container">
+        <p>© 2023 Детская школа искусств. Все права защищены.</p>
+    </div>
+</footer>
+    <script src="javascript/contacts.js"></script>
+</body>
+</html>

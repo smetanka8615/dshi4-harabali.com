@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Главная</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">ДШИ №4</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="parents.html">Для родителей</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="announcements.html">Объявления</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<main class="main-content">
+    <div class="container">
+        <h1>Добро пожаловать в Детскую школу искусств</h1>
+        <p class="welcome-text">
+            Наша школа - это место, где дети раскрывают свои творческие способности, 
+            учатся видеть прекрасное и развивают свои таланты в различных видах искусства. 
+            Мы предлагаем обучение музыке, живописи, хореографии и театральному мастерству 
+            под руководством опытных педагогов.
+        </p>
+        
+        <div class="slider">
+            <div class="slide active">
+                <img src="https://example.com/slide1.jpg" alt="Занятие живописью">
+                <div class="slide-caption">Занятия живописью в нашей школе</div>
+            </div>
+            <div class="slide">
+                <img src="https://example.com/slide2.jpg" alt="Музыкальный класс">
+                <div class="slide-caption">Музыкальные занятия для детей всех возрастов</div>
+            </div>
+            <div class="slide">
+                <img src="https://example.com/slide3.jpg" alt="Танцевальный зал">
+                <div class="slide-caption">Профессиональные занятия хореографией</div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+        </div>
+        
+        <h2 class="section-title">Наши направления</h2>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://example.com/music.jpg" alt="Музыкальное отделение">
+                <div class="gallery-caption">Музыкальное отделение</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://example.com/paint.jpg" alt="Художественное отделение">
+                <div class="gallery-caption">Художественное отделение</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://example.com/dance.jpg" alt="Танцевальное отделение">
+                <div class="gallery-caption">Танцевальное отделение</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://example.com/theater.jpg" alt="Театральная студия">
+                <div class="gallery-caption">Театральная студия</div>
+            </div>
+        </div>
+        
+        <button class="show-all-btn" id="showAllBtn">Все направления</button>
+    </div>
+</main>
+
+<div class="modal" id="directionsModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2 style="color: #2e7d32; text-align: center;">Все направления нашей школы</h2>
+        
+        <div class="directions-list">
+            <div class="direction-card">
+                <h3>Фортепианное отделение</h3>
+                <p>Обучение игре на фортепиано для детей от 5 лет. Индивидуальные занятия с профессиональными педагогами.</p>
+            </div>
+            <div class="direction-card">
+                <h3>Струнные инструменты</h3>
+                <p>Обучение игре на скрипке, виолончели, гитаре. Групповые и индивидуальные занятия.</p>
+            </div>
+            <div class="direction-card">
+                <h3>Художественное отделение</h3>
+                <p>Живопись, графика, скульптура, декоративно-прикладное искусство для детей от 6 лет.</p>
+            </div>
+            <div class="direction-card">
+                <h3>Хореография</h3>
+                <p>Классический, народный и современный танец. Занятия для разных возрастных групп.</p>
+            </div>
+            <div class="direction-card">
+                <h3>Театральная студия</h3>
+                <p>Актерское мастерство, сценическая речь, постановка спектаклей.</p>
+            </div>
+            <div class="direction-card">
+                <h3>Вокальное отделение</h3>
+                <p>Академический и эстрадный вокал. Индивидуальные и ансамблевые занятия.</p>
+            </div>
+            <div class="direction-card">
+                <h3>Духовые инструменты</h3>
+                <p>Обучение игре на флейте, саксофоне, кларнете и других духовых инструментах.</p>
+            </div>
+            <div class="direction-card">
+                <h3>Раннее эстетическое развитие</h3>
+                <p>Комплексные занятия для детей 3-5 лет: музыка, ритмика, рисование.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<footer>
+    <div class="container">
+        <p>© 2023 Детская школа искусств. Все права защищены.</p>
+    </div>
+</footer>
+
+    <script src="javascript/index.js"></script>
+
+</body>
+</html>

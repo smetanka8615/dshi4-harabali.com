@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/schedule.css">
+    <title>Расписание</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">ДШИ №4</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="schedule.html" class="active">Расписание</a></li>
+                <li><a href="parents.html">Для родителей</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="announcements.html">Объявления</a></li>
+            </ul>
+            <div class="info_line">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+    
+<main class="schedule-page">
+    <div class="container">
+        <h1 class="page-title">Расписание занятий</h1>
+        
+        <div class="schedule-container">
+            <div class="direction-schedule" data-direction="music">
+                <div class="direction-header">Музыкальное отделение</div>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Группа</th>
+                            <th>День недели</th>
+                            <th>Время</th>
+                            <th>Преподаватель</th>
+                            <th>Кабинет</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Фортепиано (нач.)</td>
+                            <td>Понедельник, Среда</td>
+                            <td>15:00-16:30</td>
+                            <td class="teacher">Иванова М.П.</td>
+                            <td class="classroom">№12</td>
+                        </tr>
+                        <tr>
+                            <td>Гитара (сред.)</td>
+                            <td>Вторник, Четверг</td>
+                            <td>16:00-17:30</td>
+                            <td class="teacher">Петров А.В.</td>
+                            <td class="classroom">№14</td>
+                        </tr>
+                        <tr>
+                            <td>Вокал (анс.)</td>
+                            <td>Пятница</td>
+                            <td>17:00-18:30</td>
+                            <td class="teacher">Сидорова Е.Н.</td>
+                            <td class="classroom">Актовый зал</td>
+                        </tr>
+                        <tr>
+                            <td>Скрипка (инд.)</td>
+                            <td>По договорённости</td>
+                            <td>-</td>
+                            <td class="teacher">Кузнецова О.И.</td>
+                            <td class="classroom">№15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Художественное отделение -->
+            <div class="direction-schedule" data-direction="art">
+                <div class="direction-header">Художественное отделение</div>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Группа</th>
+                            <th>День недели</th>
+                            <th>Время</th>
+                            <th>Преподаватель</th>
+                            <th>Кабинет</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Живопись (нач.)</td>
+                            <td>Понедельник, Пятница</td>
+                            <td>14:00-15:30</td>
+                            <td class="teacher">Смирнова Л.Д.</td>
+                            <td class="classroom">№21</td>
+                        </tr>
+                        <tr>
+                            <td>Графика</td>
+                            <td>Среда</td>
+                            <td>15:00-17:00</td>
+                            <td class="teacher">Фёдоров В.С.</td>
+                            <td class="classroom">№22</td>
+                        </tr>
+                        <tr>
+                            <td>Скульптура</td>
+                            <td>Вторник</td>
+                            <td>16:00-18:00</td>
+                            <td class="teacher">Николаева Т.П.</td>
+                            <td class="classroom">Мастерская</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Танцевальное отделение -->
+            <div class="direction-schedule" data-direction="dance">
+                <div class="direction-header">Танцевальное отделение</div>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Группа</th>
+                            <th>День недели</th>
+                            <th>Время</th>
+                            <th>Преподаватель</th>
+                            <th>Кабинет</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Классический танец</td>
+                            <td>Понедельник, Четверг</td>
+                            <td>16:00-17:30</td>
+                            <td class="teacher">Волкова А.М.</td>
+                            <td class="classroom">Танцзал №1</td>
+                        </tr>
+                        <tr>
+                            <td>Современный танец</td>
+                            <td>Вторник, Пятница</td>
+                            <td>17:00-18:30</td>
+                            <td class="teacher">Белов Д.К.</td>
+                            <td class="classroom">Танцзал №2</td>
+                        </tr>
+                        <tr>
+                            <td>Народный танец</td>
+                            <td>Среда</td>
+                            <td>15:30-17:00</td>
+                            <td class="teacher">Козлова В.И.</td>
+                            <td class="classroom">Танцзал №1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Театральное отделение -->
+            <div class="direction-schedule" data-direction="theater">
+                <div class="direction-header">Театральное отделение</div>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Группа</th>
+                            <th>День недели</th>
+                            <th>Время</th>
+                            <th>Преподаватель</th>
+                            <th>Кабинет</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Актёрское мастерство</td>
+                            <td>Вторник, Четверг</td>
+                            <td>16:30-18:00</td>
+                            <td class="teacher">Павлов И.А.</td>
+                            <td class="classroom">Театр. студия</td>
+                        </tr>
+                        <tr>
+                            <td>Сценическая речь</td>
+                            <td>Понедельник</td>
+                            <td>15:00-16:30</td>
+                            <td class="teacher">Григорьева Е.В.</td>
+                            <td class="classroom">№31</td>
+                        </tr>
+                        <tr>
+                            <td>Театральная постановка</td>
+                            <td>Суббота</td>
+                            <td>11:00-13:00</td>
+                            <td class="teacher">Павлов И.А.</td>
+                            <td class="classroom">Актовый зал</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+    
+<footer>
+    <div class="container">
+        <p>© 2023 Детская школа искусств. Все права защищены.</p>
+    </div>
+</footer>
+    <script src="javascript/"></script>
+</body>
+</html>

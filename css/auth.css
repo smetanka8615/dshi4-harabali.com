@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(46, 125, 50, 0.05), rgba(76, 175, 80, 0.05));
+}
+
+.auth-container {
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0 0 25px rgba(46, 125, 50, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.auth-image {
+    flex: 1;
+    background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(76, 175, 80, 0.7)), 
+                url('https://example.com/art-school.jpg') center/cover no-repeat;
+    display: none;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-image h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.auth-image p {
+    line-height: 1.6;
+}
+
+.auth-content {
+    flex: 1;
+    padding: 3rem 2rem;
+    background-color: white;
+}
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.auth-tab {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #6c757d;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.auth-tab.active {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.auth-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #4caf50;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2e7d32;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.25);
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(to right, #2e7d32, #4caf50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.auth-btn:hover {
+    background: linear-gradient(to right, #3e8d42, #5cbf60);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+}
+
+.auth-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.auth-footer a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.auth-footer a:hover {
+    color: #4caf50;
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.success-message {
+    color: #28a745;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #d4edda;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+        
+@media (min-width: 768px) {
+    .auth-content {
+        padding: 3rem;
+    }
+    
+    .auth-image {
+        display: flex;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-form.active {
+    animation: fadeIn 0.5s ease-out;
+}

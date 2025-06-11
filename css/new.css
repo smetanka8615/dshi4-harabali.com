@@ -1,0 +1,265 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #5a8f66, #7ab486);
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.info {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.info div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.news-section {
+    padding: 2rem 0;
+}
+
+.page-title {
+    color: #5a8f66;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 3rem;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 1.5rem;
+}
+
+.news-date {
+    color: #7ab486;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-title {
+    color: #5a8f66;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.news-excerpt {
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: #5a8f66;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #7ab486;
+}
+
+.enrollment-section {
+    background-color: #f1f8f2;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    border-left: 4px solid #5a8f66;
+}
+
+.enrollment-title {
+    color: #5a8f66;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.enrollment-list {
+    list-style-type: none;
+}
+
+.enrollment-item {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enrollment-item:last-child {
+    border-bottom: none;
+}
+
+.student-name {
+    font-weight: 600;
+    color: #495057;
+}
+
+.student-group {
+    color: #7ab486;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #5a8f66;
+    color: white;
+    text-align: center;
+    padding: 1.8rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+        
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background-color: #5a8f66;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1000;
+        padding-top: 80px;
+    }
+    
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+    
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .news-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .enrollment-section {
+        padding: 1.5rem;
+    }
+    
+    .enrollment-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .student-group {
+        margin-top: 0.5rem;
+    }
+}
+        
+.nav-active {
+    transform: translateX(0%) !important;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

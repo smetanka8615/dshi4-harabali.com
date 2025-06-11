@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/parents.css">
+    <title>Для родителей</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">ДШИ №4</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="parents.html" class="active">Для родителей</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="announcements.html">Объявления</a></li>
+            </ul>
+            <div class="info_line">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+    
+<main class="parents-page">
+    <div class="container">
+        <h1 class="page-title">Информация для родителей</h1>
+        
+        <section class="info-section">
+            <h2 class="section-title">О школе</h2>
+            <p class="info-text">
+                Детская школа искусств предоставляет качественное образование в сфере искусства для детей от 5 до 18 лет. 
+                Наша миссия - раскрыть творческий потенциал каждого ребенка и помочь ему развить свои таланты.
+            </p>
+            <p class="info-text">
+                Мы предлагаем обучение по различным направлениям: музыка, живопись, хореография, театральное искусство. 
+                Занятия проводят опытные педагоги с высшим профессиональным образованием.
+            </p>
+        </section>
+        
+        <section class="payment-section">
+            <h2 class="section-title">Оплата обучения</h2>
+            <p class="info-text">
+                Оплата за обучение производится ежемесячно, до 10 числа текущего месяца. 
+                Стоимость обучения зависит от выбранного направления и количества занятий.
+            </p>
+            <ul class="info-list">
+                <li>Музыкальное отделение - 3 500 руб./мес.</li>
+                <li>Художественное отделение - 3 000 руб./мес.</li>
+                <li>Танцевальное отделение - 2 800 руб./мес.</li>
+                <li>Театральная студия - 3 200 руб./мес.</li>
+            </ul>
+            <button class="payment-btn" id="openPaymentModal">Оплатить онлайн</button>
+        </section>
+        
+        <section class="info-section">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <ul class="info-list">
+                <li><strong>С какого возраста принимают в школу?</strong><br>
+                    Набор детей осуществляется с 5 лет на программу раннего эстетического развития, с 7 лет - на основные программы.</li>
+                <li><strong>Нужно ли покупать инструмент для музыкального отделения?</strong><br>
+                    Для начального обучения можно пользоваться школьными инструментами, но для домашних занятий потребуется свой инструмент.</li>
+                <li><strong>Какой график занятий?</strong><br>
+                    Занятия проходят во второй половине дня, 2-3 раза в неделю в зависимости от направления.</li>
+                <li><strong>Есть ли льготы на оплату обучения?</strong><br>
+                    Льготы предоставляются многодетным семьям и некоторым другим категориям (уточняйте у администрации).</li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+<div class="modal" id="paymentModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2 class="modal-title">Оплата обучения</h2>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="childName" class="form-label">ФИО ребенка</label>
+                <input type="text" id="childName" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="parentName" class="form-label">ФИО родителя</label>
+                <input type="text" id="parentName" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="direction" class="form-label">Направление обучения</label>
+                <select id="direction" class="form-input" required>
+                    <option value="">Выберите направление</option>
+                    <option value="music">Музыкальное отделение</option>
+                    <option value="art">Художественное отделение</option>
+                    <option value="dance">Танцевальное отделение</option>
+                    <option value="theater">Театральная студия</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount" class="form-label">Сумма оплаты (руб.)</label>
+                <input type="number" id="amount" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber" class="form-label">Номер карты</label>
+                <input type="text" id="cardNumber" class="form-input" placeholder="0000 0000 0000 0000" required>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <div class="form-group" style="flex: 1;">
+                    <label for="cardExpiry" class="form-label">Срок действия</label>
+                    <input type="text" id="cardExpiry" class="form-input" placeholder="ММ/ГГ" required>
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label for="cardCvc" class="form-label">CVC/CVV</label>
+                    <input type="text" id="cardCvc" class="form-input" placeholder="123" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Оплатить</button>
+        </form>
+    </div>
+</div>
+    
+<footer>
+    <div class="container">
+        <p>© 2023 Детская школа искусств. Все права защищены.</p>
+    </div>
+</footer>
+    
+    <script src="javascript/parents.js"></script>
+</body>
+</html>
